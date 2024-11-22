@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DIARY</title>
+</head>
+<body>
+
+    <div>
+        <h1 class = "title">DIARY</h1>
+        <hr>
+        <h3 class = "yearMonth">2024년</h3>
+        <h3 class = "yearMonth">11월</h3>
+        <br>
+        
+
+        <div style="display: flex;">   <!-- 요일 정의 -->
+            <!-- 요일 목록이 들어갈 div -->
+            <div class = "day"></div>
+            <br>
+
+            <!-- day 클래스 js 정의 -->
+            <script src = "script/day.js"></script>
+        </div>
+
+
+        <div>   <!-- 날짜별 박스 정의 -->
+            <!-- 각각의 박스가 들어갈 div -->
+            <div class = "container"></div>
+            <br>
+            
+            <!-- container 클래스 js 정의 -->
+            <script src = "script/container.js"></script>
+        </div>
+    </div>
+
+    <div id = "context-menu">    <!-- 콘텍스트 박스 정의 -->
+        <button id="add-checkbox">메모 추가</button>
+        <button id="add-textbox">체크박스 추가</button>
+
+        <script src = "script/context_memu.js"></script>
+    </div>
+
+
+</body>
+</html>
