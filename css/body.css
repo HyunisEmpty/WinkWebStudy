@@ -1,0 +1,9 @@
+/* 전체 페이지 스크롤 막대 숨기기 */
+body {
+    overflow-y: scroll; /* 수직 스크롤 유지 */
+}
+
+/* 스크롤바 자체를 숨김 */
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리용 스크롤바 숨기기 */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/layout_wrapper.css">
+    <title>DIARY</title>
+</head>
+<body>
+    <div class="layout-wrapper">
+        <div class="main-content">
+            <div class = "main">
+                <h1 class = "title">DIARY 2025</h1>
+                <hr>
+                <!-- <h3 class = "yearMonth">2025년</h3>
+                <h3 class = "yearMonth">1월</h3> -->
+                <br>
+                
+        
+                <div style="display: flex;">   <!-- 요일 정의 -->
+                    <!-- 요일 목록이 들어갈 div -->
+                    <div class = "day"></div>
+                    <br>
+        
+                    <!-- day 클래스 js 정의 -->
+                    <script src = "script/day.js"></script>
+                </div>
+            </div>
+        
+            <div class = "calender">   <!-- 날짜별 박스 정의 -->
+                <!-- 각각의 박스가 들어갈 div -->
+                <div class = "container"></div>
+                <br>
+                
+                <!-- container 클래스 js 정의 -->
+                <script src = "script/container.js"></script>
+            </div>
+        </div>
+    
+        <!-- 오른쪽 고정 영역 -->
+        <div class="info-panel">
+            원하시는 날짜를 눌러 일정을 추가 하세요.
+            
+            <script src="script/info.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>

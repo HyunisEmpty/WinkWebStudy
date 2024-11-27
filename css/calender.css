@@ -1,0 +1,39 @@
+.calender {
+    display: block;
+    position: static; 
+}
+
+/* 박스를 담는 container 정의 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 한 줄에 7개의 박스 */
+    gap: 1px; /* 박스 간 간격 */
+}
+
+/* container 클래스 내부, box 클래스 정의 */
+.container .box {
+    aspect-ratio: 1/0.6;                          /* 가로 세로 비율 정의 */
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;     /* 색상 변화 애니메이션 */
+
+    border-radius: 5px;
+}
+
+/* container 클래스 내부, box 클래스 hover 정의 */
+.container .box:hover {
+    background-color: #dddddd;              /* 마우스를 올렸을때 변활될 색상 정의 */
+}
+
+/* container 클래스 내부, container 클래스 내부 p 태그 정의 */
+.container .box p {
+    text-align: right;
+
+    display: block;         /* 날짜가 있는 부분은 block으로 다른 요소가 침범하지 못하도록 한다. */
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
